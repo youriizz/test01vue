@@ -1,13 +1,13 @@
 <template>
 
     <div class="container-red">
-      <RedCircle />
+      <RedCircle :targetRoute="redRoute" />
     </div>
     <div class="container-orange">
-      <OrangeCircle />
+      <OrangeCircle :targetRoute="orangeRoute" />
     </div>
     <div class="container-green">
-      <GreenCircle />
+      <GreenCircle :targetRoute="greenRoute" />
 
   </div>
 
@@ -27,6 +27,11 @@ export default {
     OrangeCircle,
     GreenCircle        
    },
+   props: {
+    redRoute: String,
+    orangeRoute: String,
+    greenRoute: String
+   }
 }
 </script>
 

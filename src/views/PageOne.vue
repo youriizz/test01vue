@@ -3,7 +3,7 @@
   <div>
     <h1>PageOne</h1>
       <div class="container-1">
-       <FeuFull />
+        <FeuFull :redRoute="'/'" :orangeRoute="'/'" :greenRoute="'/page-one'"/>
       </div>
   </div>
 </template>
