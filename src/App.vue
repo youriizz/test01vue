@@ -4,7 +4,7 @@
   <button @click="handleClick">Click me</button>
   <div class="container-1">
     <div class="redcircle-container">
-        <RedCircle />
+        <RedCircle :CircleText="CircleText"/>
     </div>
   </div>
 
@@ -21,7 +21,8 @@ export default {
    },
   data() {
     return {
-      title : 'my first vue app :)'
+      title : 'my first vue app :)',
+      CircleText: 'wesh bien ou quoi'
     }
   }, 
   methods: {
